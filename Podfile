@@ -5,12 +5,11 @@ use_frameworks!
 
 target 'NearbyLHLMentors' do
 
-#pod 'IQKeyboardManagerSwift'
-#pod 'SwiftDate'
 pod 'Alamofire', '~> 3.1'
 pod 'ObjectMapper', '~> 1.1'
 pod 'AlamofireObjectMapper', '~> 2.1'
-#pod 'SWTableViewCell', '~> 0.3.7'
+pod 'INTULocationManager'
+pod 'IQKeyboardManagerSwift'
 
 end
 

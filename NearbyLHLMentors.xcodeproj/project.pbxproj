@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880DE83F1CBECB460000C52D /* MyStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DE83E1CBECB460000C52D /* MyStackViewController.swift */; };
+		8889B69F1CBED83F0050CC17 /* TechnologyPickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8889B69E1CBED83F0050CC17 /* TechnologyPickerTableViewController.swift */; };
+		8889B6A11CBED9F60050CC17 /* NearbyMentorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8889B6A01CBED9F60050CC17 /* NearbyMentorsViewController.swift */; };
+		8889B6A31CBEE1750050CC17 /* SpecialtyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8889B6A21CBEE1750050CC17 /* SpecialtyTableViewCell.swift */; };
+		8889B6A51CBEEB3E0050CC17 /* MentorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8889B6A41CBEEB3E0050CC17 /* MentorProfileViewController.swift */; };
+		8889B6A71CBF099D0050CC17 /* SocialBadgeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8889B6A61CBF099D0050CC17 /* SocialBadgeView.xib */; };
+		8889B6AB1CBF09CB0050CC17 /* SocialBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8889B6AA1CBF09CB0050CC17 /* SocialBadgeView.swift */; };
 		88D5C94B1CBEA5670060E135 /* MentorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5C94A1CBEA5670060E135 /* MentorsTableViewController.swift */; };
-		88D5C94E1CBEADCE0060E135 /* TechnologiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5C94D1CBEADCE0060E135 /* TechnologiesTableViewController.swift */; };
 		88D5C9501CBEB15F0060E135 /* Mentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5C94F1CBEB15F0060E135 /* Mentor.swift */; };
 		88D5C9531CBEB6EE0060E135 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5C9521CBEB6EE0060E135 /* APIManager.swift */; };
 		88D5C9551CBEB9840060E135 /* MentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5C9541CBEB9840060E135 /* MentorTableViewCell.swift */; };
@@ -21,8 +27,14 @@
 
 /* Begin PBXFileReference section */
 		832C0E5712FCA88D5E51F528 /* Pods_NearbyLHLMentors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyLHLMentors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		880DE83E1CBECB460000C52D /* MyStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStackViewController.swift; sourceTree = "<group>"; };
+		8889B69E1CBED83F0050CC17 /* TechnologyPickerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnologyPickerTableViewController.swift; sourceTree = "<group>"; };
+		8889B6A01CBED9F60050CC17 /* NearbyMentorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyMentorsViewController.swift; sourceTree = "<group>"; };
+		8889B6A21CBEE1750050CC17 /* SpecialtyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialtyTableViewCell.swift; sourceTree = "<group>"; };
+		8889B6A41CBEEB3E0050CC17 /* MentorProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentorProfileViewController.swift; sourceTree = "<group>"; };
+		8889B6A61CBF099D0050CC17 /* SocialBadgeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialBadgeView.xib; sourceTree = "<group>"; };
+		8889B6AA1CBF09CB0050CC17 /* SocialBadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialBadgeView.swift; sourceTree = "<group>"; };
 		88D5C94A1CBEA5670060E135 /* MentorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentorsTableViewController.swift; sourceTree = "<group>"; };
-		88D5C94D1CBEADCE0060E135 /* TechnologiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnologiesTableViewController.swift; sourceTree = "<group>"; };
 		88D5C94F1CBEB15F0060E135 /* Mentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mentor.swift; sourceTree = "<group>"; };
 		88D5C9521CBEB6EE0060E135 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		88D5C9541CBEB9840060E135 /* MentorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentorTableViewCell.swift; sourceTree = "<group>"; };
@@ -60,8 +72,11 @@
 		88D5C94C1CBEA56F0060E135 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				880DE83E1CBECB460000C52D /* MyStackViewController.swift */,
+				8889B69E1CBED83F0050CC17 /* TechnologyPickerTableViewController.swift */,
+				8889B6A01CBED9F60050CC17 /* NearbyMentorsViewController.swift */,
 				88D5C94A1CBEA5670060E135 /* MentorsTableViewController.swift */,
-				88D5C94D1CBEADCE0060E135 /* TechnologiesTableViewController.swift */,
+				8889B6A41CBEEB3E0050CC17 /* MentorProfileViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -78,6 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				88D5C9541CBEB9840060E135 /* MentorTableViewCell.swift */,
+				8889B6A21CBEE1750050CC17 /* SpecialtyTableViewCell.swift */,
+				8889B6A61CBF099D0050CC17 /* SocialBadgeView.xib */,
+				8889B6AA1CBF09CB0050CC17 /* SocialBadgeView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -186,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88D9FD8B1CBEA29A008713BF /* LaunchScreen.storyboard in Resources */,
+				8889B6A71CBF099D0050CC17 /* SocialBadgeView.xib in Resources */,
 				88D9FD881CBEA29A008713BF /* Assets.xcassets in Resources */,
 				88D9FD861CBEA29A008713BF /* Main.storyboard in Resources */,
 			);
@@ -246,12 +265,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8889B6A31CBEE1750050CC17 /* SpecialtyTableViewCell.swift in Sources */,
+				8889B69F1CBED83F0050CC17 /* TechnologyPickerTableViewController.swift in Sources */,
 				88D5C9501CBEB15F0060E135 /* Mentor.swift in Sources */,
+				880DE83F1CBECB460000C52D /* MyStackViewController.swift in Sources */,
 				88D5C94B1CBEA5670060E135 /* MentorsTableViewController.swift in Sources */,
+				8889B6A11CBED9F60050CC17 /* NearbyMentorsViewController.swift in Sources */,
+				8889B6AB1CBF09CB0050CC17 /* SocialBadgeView.swift in Sources */,
 				88D5C9551CBEB9840060E135 /* MentorTableViewCell.swift in Sources */,
 				88D5C9531CBEB6EE0060E135 /* APIManager.swift in Sources */,
-				88D5C94E1CBEADCE0060E135 /* TechnologiesTableViewController.swift in Sources */,
 				88D9FD811CBEA299008713BF /* AppDelegate.swift in Sources */,
+				8889B6A51CBEEB3E0050CC17 /* MentorProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,16 +3,22 @@ PODS:
   - AlamofireObjectMapper (2.1.2):
     - Alamofire (~> 3.2)
     - ObjectMapper (~> 1.0)
+  - INTULocationManager (4.2.0)
+  - IQKeyboardManagerSwift (4.0.1)
   - ObjectMapper (1.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 3.1)
   - AlamofireObjectMapper (~> 2.1)
+  - INTULocationManager
+  - IQKeyboardManagerSwift
   - ObjectMapper (~> 1.1)
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   AlamofireObjectMapper: 82391c31f23e37bdb2660da174bcf81b202da39d
+  INTULocationManager: 73f8254b3d05c897c56bb13c190e5b7c648c0998
+  IQKeyboardManagerSwift: e92246955e21dad73ad9dc89b80adb134d8bb395
   ObjectMapper: b1e9c7c8a9f6400b72690c80072c131504caa66f
 
 COCOAPODS: 0.39.0

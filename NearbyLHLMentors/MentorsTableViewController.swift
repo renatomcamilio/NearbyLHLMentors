@@ -16,9 +16,15 @@ class MentorsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        APIManager.mentors { [weak self] response in
-            if let mentors = response.result.value {
-                self?.mentors = mentors.sort()
+        tableView.estimatedRowHeight = 60
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        APIManager.fetchMentors { [weak self] response in
+            if let people = response.result.value {
+                self!.mentors = people.filter { (mentor) -> Bool in
+                    return mentor.specialties.count > 0
+                }
+                
                 self?.tableView.reloadData()
             }
         }
@@ -38,6 +44,10 @@ class MentorsTableViewController: UITableViewController {
         return mentors.count
     }
     
+    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60
+    }
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MentorTableViewCell", forIndexPath: indexPath) as! MentorTableViewCell
         
@@ -45,5 +55,5 @@ class MentorsTableViewController: UITableViewController {
         
         return cell
     }
-
+    
 }

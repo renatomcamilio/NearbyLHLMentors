@@ -13,11 +13,16 @@ import AlamofireObjectMapper
 class APIManager {
     
     private static let url = "http://skillsbc.vansortium.com"
-
     
-    static func mentors(completionHandler: Response<[Mentor], NSError> -> Void) {
+    
+    static func fetchMentors(completionHandler: Response<[Mentor], NSError> -> Void) {
         Alamofire.request(.GET, "\(APIManager.url)/mentors")
             .responseArray { (response: Response<[Mentor], NSError>) in completionHandler(response) }
+    }
+    
+    static func fetchMentor(withId id: String, completionHandler: Response<Mentor, NSError> -> Void) {
+        Alamofire.request(.GET, "\(APIManager.url)/mentors/\(id)")
+            .responseObject { (response: Response<Mentor, NSError>) in completionHandler(response) }
     }
     
 }

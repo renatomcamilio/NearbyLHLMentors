@@ -9,7 +9,7 @@
 import ObjectMapper
 import CoreLocation
 
-
+//MARK: - Comparable
 func ==(lhs: Mentor, rhs: Mentor) -> Bool {
     return lhs.id == rhs.id
 }
@@ -18,7 +18,8 @@ func <(lhs: Mentor, rhs: Mentor) -> Bool {
     return lhs.fullName.compare(rhs.fullName) == .OrderedAscending
 }
 
-class Mentor: Mappable, Comparable {
+
+class Mentor: Mappable, Comparable, Hashable {
     
     var id = ""
     var firstName = ""
@@ -27,7 +28,7 @@ class Mentor: Mappable, Comparable {
     var phoneNumber = ""
     var twitter: String? = nil
     var github = ""
-    var avatar: UIImage? = nil
+    var avatarURL: String? = nil
     var companyName: String? = nil
     var companyURL: String? = nil
     var quirkyFact = ""
@@ -62,5 +63,7 @@ class Mentor: Mappable, Comparable {
         location <- map["location"]
         onDuty <- map["on_duty"]
     }
+    
+    var hashValue: Int { return id.hashValue }
     
 }

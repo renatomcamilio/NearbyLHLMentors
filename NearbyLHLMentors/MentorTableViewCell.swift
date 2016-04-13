@@ -11,10 +11,13 @@ import UIKit
 class MentorTableViewCell: UITableViewCell {
 
     @IBOutlet weak var fullNameLabel: UILabel!
+    @IBOutlet weak var specialtiesLabel: UILabel!
+    
     
     var mentor: Mentor? {
         didSet {
             fullNameLabel.text = mentor?.fullName
+            specialtiesLabel.text = mentor?.specialties.joinWithSeparator(" • ")
         }
     }
     
